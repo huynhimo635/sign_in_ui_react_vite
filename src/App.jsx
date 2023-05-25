@@ -1,7 +1,10 @@
 import './styles/index.scss'
 
+import LoginPage from './pages/Login'
+
 function App() {
-	return <div className="container">Hello world!</div>
+	// Just render login page only is enough, skip `routes` setup phase
+	return <LoginPage />
 }
 
 export default App
