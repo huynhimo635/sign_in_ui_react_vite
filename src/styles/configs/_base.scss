@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+	font-size: 16px;
+	scroll-behavior: smooth;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	max-width: 1920px;
+
+	@include mobile {
+		font-size: 13px;
+	}
+}
+
+body {
+	font-size: $medium_fs;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+img {
+	max-width: 100%;
+}
+
+.grid {
+	display: grid;
+}
+
+// Generator grid automatic via class name
+@each $val in $grid_numbers {
+	.grid-col-#{$val} {
+		grid-template-columns: repeat($val, 1fr);
+	}
+}
+
+@each $val in $grid_numbers {
+	.grid-col-md-#{$val} {
+		@include tablet {
+			grid-template-columns: repeat($val, 1fr);
+		}
+	}
+}
+
+@each $val in $grid_numbers {
+	.grid-col-sm-#{$val} {
+		@include mobile {
+			grid-template-columns: repeat($val, 1fr);
+		}
+	}
+}
+
+.container {
+	width: 100%;
+	padding: 10px;
+	margin: auto;
+
+	border: 1px red solid;
+}
