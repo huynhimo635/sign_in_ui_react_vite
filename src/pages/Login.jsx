@@ -1,4 +1,4 @@
-import { Helmet, Grid } from '../components'
+import { Helmet } from '../components'
 
 const LoginPage = () => {
 	return (
@@ -6,12 +6,15 @@ const LoginPage = () => {
 			<Helmet title="Sign in" />
 
 			<div className="container login">
-				<Grid col={4} sm={0}>
-					<div className="login__image"></div>
-				</Grid>
-				<Grid col={6} sm={12}>
-					<div className="login__content"></div>
-				</Grid>
+				<img
+					src="src/assets/images/login_img.jpg"
+					alt="Login Image"
+					className="login__image"
+				/>
+
+				<div className="login__content">
+					<h1>test</h1>
+				</div>
 			</div>
 		</>
 	)

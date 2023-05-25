@@ -15,8 +15,13 @@ $secondary_bg_color: #222222;
 $tertiary_bg_color: #f8f8f8;
 
 // Responsive width
-$mobile_width: 360px;
-$tablet_width: 1366px;
+$mobile_width: 600px;
+$tablet_width: 1024px;
 
 // Grid Numbers
 $grid_numbers: (0, 1, 2, 3, 4, 5, 6, 7, 8);
+
+// Constants
+$height_exclude_container: calc(100vh - 30px);
+$height_exclude_container_tablet: calc(100vh - 20px);
+$height_exclude_container_mobile: 100vh;

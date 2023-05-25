@@ -1,0 +1,36 @@
+.login {
+	@include flex(center, space-between);
+
+	width: 100%;
+	height: $height_exclude_container;
+	@include tablet {
+		height: $height_exclude_container_tablet;
+	}
+	@include mobile {
+		height: $height_exclude_container_mobile;
+	}
+
+	&__image {
+		width: 40%;
+		min-width: 180px;
+		height: 100%;
+		object-fit: cover;
+
+		@include mobile {
+			width: 0;
+			min-width: 0;
+		}
+	}
+
+	&__content {
+		width: 60%;
+		min-width: 420px;
+
+		@include flex(center, center);
+
+		@include mobile {
+			width: 100%;
+			min-width: 100%;
+		}
+	}
+}
