@@ -1,6 +1,7 @@
 import { Helmet, FormTextField, FormPasswordField, Button } from '../components'
 
 import GoogleLogo from '../assets/images/google-logo.svg'
+import AvtImage from '../assets/images/login_img.jpg'
 
 const LoginPage = () => {
 	return (
@@ -9,11 +10,7 @@ const LoginPage = () => {
 
 			<div className="container login">
 				{/* Left side */}
-				<img
-					src="src/assets/images/login_img.jpg"
-					alt="Login Image"
-					className="login__image"
-				/>
+				<img src={AvtImage} alt="Login Image" className="login__image" />
 
 				{/* Right side */}
 				<div className="login__content">
