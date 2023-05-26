@@ -1,18 +1,26 @@
 .login {
 	@include flex(center, space-between);
 
-	width: 100%;
-	height: $height_exclude_container;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	margin: 15px;
+	width: calc(100vw - 30px);
+	height: calc(100vh - 30px);
+
 	@include tablet {
-		height: $height_exclude_container_tablet;
+		margin: 10px;
+		width: calc(100vw - 20px);
+		height: calc(100vh - 20px);
 	}
+
 	@include mobile {
-		height: $height_exclude_container_mobile;
+		width: 100vw;
+		height: 100vh;
+		margin: 0px;
 	}
 
 	&__image {
 		width: 40%;
-		min-width: 180px;
+		min-width: 240px;
 		height: 100%;
 		object-fit: cover;
 
@@ -23,18 +31,81 @@
 	}
 
 	&__content {
-		@include flex(center, center);
+		@include flex(flex-start, space-between, column);
 
-		width: 60%;
-		min-width: 420px;
-		padding: 20px;
+		width: 30%;
+		height: 80%;
+		min-width: 360px;
+		margin: auto 15%;
 
-		@include mobile {
-			width: 100%;
-			min-width: 100%;
+		@include tablet {
+			width: 40%;
+			margin: 0 10%;
 		}
 
-		&__items {
+		@include mobile {
+			width: 94%;
+			align-items: center;
+			min-width: 94%;
+			margin: 0 3%;
+		}
+
+		&__title {
+			margin-bottom: auto;
+
+			h3 {
+				font-size: $large_fs;
+				font-weight: 500;
+				letter-spacing: 0.0125rem;
+				line-height: 2.125rem;
+				margin-bottom: 1.25rem;
+			}
+
+			p {
+				letter-spacing: 0.0275rem;
+				line-height: 1.5rem;
+
+				a {
+					font-weight: 500;
+				}
+			}
+		}
+
+		&__form {
+			margin-bottom: auto;
+			width: 100%;
+
+			input ~ input {
+				margin-top: 2rem;
+			}
+
+			input {
+				width: 100%;
+				padding: 5px 10px;
+				margin: 7px 7px 7px 0;
+			}
+
+			a {
+				text-align: center;
+				display: block;
+				margin-top: 1.25rem;
+				letter-spacing: 0.0275rem;
+				line-height: 1.5rem;
+			}
+		}
+
+		&__buttons {
+			margin-bottom: auto;
+			width: 100%;
+
+			button {
+				display: block;
+				width: 100%;
+			}
+
+			button ~ button {
+				margin-top: 1.25rem;
+			}
 		}
 	}
 }

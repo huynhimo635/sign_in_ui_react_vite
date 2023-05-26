@@ -20,6 +20,10 @@ body {
 	overflow: hidden;
 }
 
+a {
+	color: $primary_text_color;
+}
+
 img {
 	max-width: 100%;
 }
@@ -54,13 +58,9 @@ img {
 .container {
 	width: 100%;
 	margin: auto;
-	padding: 15px;
+}
 
-	@include tablet {
-		padding: 10px;
-	}
-
-	@include mobile {
-		padding: 0px;
-	}
+.link-text {
+	text-decoration: underline;
+	cursor: pointer;
 }

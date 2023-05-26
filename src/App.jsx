@@ -1,5 +1,3 @@
-import './styles/index.scss'
-
 import LoginPage from './pages/Login'
 
 function App() {

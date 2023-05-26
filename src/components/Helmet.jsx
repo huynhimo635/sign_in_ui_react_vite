@@ -8,7 +8,7 @@ const Helmet = (props) => {
 
 Helmet.propTypes = {
 	title: PropTypes.string.isRequired,
-	children: PropTypes.children,
+	children: PropTypes.node,
 }
 
 export default Helmet

@@ -19,7 +19,7 @@ Grid.propTypes = {
 	mdCol: PropTypes.number,
 	smCol: PropTypes.number,
 	gap: PropTypes.number,
-	children: PropTypes.children,
+	children: PropTypes.node,
 }
 
 export default Grid
