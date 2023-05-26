@@ -1,4 +1,4 @@
-import { Helmet } from '../components'
+import { Helmet, FormTextField, FormPasswordField } from '../components'
 
 const LoginPage = () => {
 	return (
@@ -30,19 +30,20 @@ const LoginPage = () => {
 							It takes less than a minute.
 						</p>
 					</div>
-					<div className="login__content__form">
-						<div>
-							<label htmlFor="email">Email</label>
-							<input type="text" name="email" />
-						</div>
-						<div>
-							<label htmlFor="password">Password</label>
-							<input type="password" name="password" />
-						</div>
+
+					<form className="login__content__form">
+						<FormTextField title="Email" name="email" />
+
+						<FormPasswordField
+							title="Password"
+							name="password"
+							hideShowButton
+						/>
 						<a href="#" className="link-text">
 							Forgot Password?
 						</a>
-					</div>
+					</form>
+
 					<div className="login__content__buttons">
 						<button>Sign in</button>
 						<button>Sign in via Google</button>
