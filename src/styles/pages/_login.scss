@@ -78,6 +78,10 @@
 				margin-top: 1.25rem;
 				letter-spacing: 0.0275rem;
 				line-height: 1.5rem;
+
+				@include mobile {
+					width: 100%;
+				}
 			}
 		}
 
@@ -96,6 +100,10 @@
 					color: $secondary_text_color;
 					background-color: $secondary_bg_color;
 					width: 90%;
+
+					@include mobile {
+						width: 100%;
+					}
 				}
 			}
 
@@ -104,6 +112,10 @@
 					color: $primary_text_color;
 					background-color: $tertiary_bg_color;
 					width: 90%;
+
+					@include mobile {
+						width: 100%;
+					}
 				}
 			}
 		}
