@@ -1,32 +1,25 @@
 .login {
 	@include flex(center, space-between);
-
-	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-	margin: 15px;
-	width: calc(100vw - 30px);
-	height: calc(100vh - 30px);
-
-	@include tablet {
-		margin: 10px;
-		width: calc(100vw - 20px);
-		height: calc(100vh - 20px);
-	}
-
-	@include mobile {
-		width: 100vw;
-		height: 100vh;
-		margin: 0px;
-	}
+	width: 100vw;
+	height: 100vh;
 
 	&__image {
 		width: 45%;
 		min-width: 240px;
-		height: 100%;
 		object-fit: cover;
+
+		height: calc(100% - 30px);
+		margin: 15px;
+
+		@include tablet {
+			height: calc(100% - 20px);
+			margin: 10px;
+		}
 
 		@include mobile {
 			width: 0;
 			min-width: 0;
+			margin: 0;
 		}
 	}
 

@@ -1,4 +1,4 @@
-import { Helmet, FormTextField, FormPasswordField } from '../components'
+import { Helmet, FormTextField, FormPasswordField, Button } from '../components'
 
 const LoginPage = () => {
 	return (
@@ -45,8 +45,8 @@ const LoginPage = () => {
 					</form>
 
 					<div className="login__content__buttons">
-						<button>Sign in</button>
-						<button>Sign in via Google</button>
+						<Button>Sign in</Button>
+						<Button>Sign in via Google</Button>
 					</div>
 				</div>
 			</div>
