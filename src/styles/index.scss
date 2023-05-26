@@ -1,12 +1,12 @@
 // Variables
-@import './variables/variables';
+@import './variables.vars';
 
-// Mixins
-@import './mixins/mixins';
+// Utilities
+@import './mixins.utils';
 
 // Configs
-@import './configs/reset';
-@import './configs/base';
+@import './reset.configs';
+@import './base.configs';
 
 // Components
 

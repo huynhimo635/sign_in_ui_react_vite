@@ -23,14 +23,18 @@
 	}
 
 	&__content {
+		@include flex(center, center);
+
 		width: 60%;
 		min-width: 420px;
-
-		@include flex(center, center);
+		padding: 20px;
 
 		@include mobile {
 			width: 100%;
 			min-width: 100%;
+		}
+
+		&__items {
 		}
 	}
 }
