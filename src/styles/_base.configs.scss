@@ -24,6 +24,12 @@ a {
 	color: $primary_text_color;
 }
 
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 img {
 	max-width: 100%;
 }
@@ -58,9 +64,4 @@ img {
 .container {
 	width: 100%;
 	margin: auto;
-}
-
-.link-text {
-	text-decoration: underline;
-	cursor: pointer;
 }

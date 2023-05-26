@@ -1,0 +1,55 @@
+.form-control {
+	margin: 30px 15px 15px 0;
+
+	input {
+		display: block;
+		width: 90%;
+		padding: 8px 16px;
+		margin: 7px 7px 7px 0;
+		letter-spacing: 0.0275rem;
+
+		font-size: $semi_medium_fs;
+
+		&:focus {
+			outline: none;
+			box-shadow: 0.0125rem 0.01rem 0.125rem $primary_text_color;
+		}
+	}
+
+	&__password {
+		position: relative;
+
+		input {
+			background-color: $tertiary_bg_color;
+			border: none;
+
+			&:focus {
+				box-shadow: none;
+			}
+		}
+
+		&__icon {
+			position: absolute;
+			bottom: 0;
+			right: 10%;
+			padding: 8px 16px;
+			border: none;
+			background-color: inherit;
+			font-size: $semi_large_fs;
+		}
+	}
+
+	label {
+		font-size: $semi_medium_fs;
+		font-weight: 500;
+		letter-spacing: 0.05rem;
+	}
+
+	@include tablet {
+		margin: 20px 10px 10px 0;
+	}
+
+	@include mobile {
+		margin: 15px 7px 7px 0;
+	}
+}
