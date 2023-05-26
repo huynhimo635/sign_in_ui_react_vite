@@ -10,8 +10,6 @@ const FormPasswordField = (props) => {
 		...inputProps
 	} = props
 
-	console.log({ hideShowButton })
-
 	const [showPassword, setShowPassword] = useState(false)
 
 	const handleChange = (event) => {

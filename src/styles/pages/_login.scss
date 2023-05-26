@@ -4,12 +4,15 @@
 	height: 100vh;
 
 	&__image {
-		width: 45%;
+		width: 40%;
 		min-width: 240px;
-		object-fit: cover;
-
 		height: calc(100% - 30px);
 		margin: 15px;
+
+		img {
+			object-fit: cover;
+			max-width: 100%;
+		}
 
 		@include tablet {
 			height: calc(100% - 20px);
@@ -26,10 +29,10 @@
 	&__content {
 		@include flex(flex-start, space-between, column);
 
-		width: 35%;
+		width: 30%;
 		height: 80%;
 		min-width: 360px;
-		margin: auto 10%;
+		margin: auto 15%;
 
 		@include tablet {
 			width: 40%;
@@ -82,13 +85,26 @@
 			margin-bottom: auto;
 			width: 100%;
 
-			button {
-				display: block;
-				width: 90%;
+			&__sign-in {
+				margin-bottom: 1.25rem;
+
+				@include mobile {
+					margin-bottom: 0.75rem;
+				}
+
+				button {
+					color: $secondary_text_color;
+					background-color: $secondary_bg_color;
+					width: 90%;
+				}
 			}
 
-			button ~ button {
-				margin-top: 1.25rem;
+			&__gg-sign-in {
+				button {
+					color: $primary_text_color;
+					background-color: $tertiary_bg_color;
+					width: 90%;
+				}
 			}
 		}
 	}

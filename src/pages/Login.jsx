@@ -1,5 +1,7 @@
 import { Helmet, FormTextField, FormPasswordField, Button } from '../components'
 
+import GoogleLogo from '../assets/images/google-logo.svg'
+
 const LoginPage = () => {
 	return (
 		<>
@@ -15,6 +17,7 @@ const LoginPage = () => {
 
 				{/* Right side */}
 				<div className="login__content">
+					{/* Title description */}
 					<div className="login__content__title">
 						<h3 className="">
 							Welcome to Panorama,
@@ -31,9 +34,9 @@ const LoginPage = () => {
 						</p>
 					</div>
 
+					{/* Form fields */}
 					<form className="login__content__form">
 						<FormTextField title="Email" name="email" />
-
 						<FormPasswordField
 							title="Password"
 							name="password"
@@ -44,9 +47,17 @@ const LoginPage = () => {
 						</a>
 					</form>
 
+					{/* Buttons */}
 					<div className="login__content__buttons">
-						<Button>Sign in</Button>
-						<Button>Sign in via Google</Button>
+						<div className="login__content__buttons__sign-in">
+							<Button>Sign In</Button>
+						</div>
+						<div className="login__content__buttons__gg-sign-in">
+							<Button>
+								<img src={GoogleLogo} alt="" />
+								<span>Sign in via Google</span>
+							</Button>
+						</div>
 					</div>
 				</div>
 			</div>
