@@ -42,6 +42,6 @@ Your app is ready to be deployed!
 
 ## Tech Stack
 
-**Programming Language / Framework:** Javascript, React\
+**Programming Language:** Javascript\
 **Libraries:** React, SASS\
 **Build tool:** Vite
