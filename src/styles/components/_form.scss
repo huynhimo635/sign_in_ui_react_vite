@@ -41,6 +41,10 @@
 			border: none;
 			background-color: inherit;
 			font-size: $semi_large_fs;
+
+			@include mobile {
+				right: 0;
+			}
 		}
 	}
 
